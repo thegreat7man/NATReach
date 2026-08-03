@@ -136,13 +136,13 @@ End users do not need to compile anything. Ready-to-run archives are provided in
 Standard builds require Go 1.25 or newer:
 
 ```bash
-./scripts/build-all.sh
+bash ./scripts/build-all.sh
 ```
 
 Big Sur-compatible archives are built with Go 1.24.13:
 
 ```bash
-./scripts/build-legacy-mac.sh
+bash ./scripts/build-legacy-mac.sh
 ```
 
 On Windows, use `scripts/build-all.ps1`. Every binary is built with `CGO_ENABLED=0` and requires no external runtime libraries.
