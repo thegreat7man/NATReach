@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible NATReach problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve NATReach. Do not report security vulnerabilities here; use private vulnerability reporting instead.
+  - type: input
+    id: version
+    attributes:
+      label: NATReach version
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include exact steps, expected behavior, and observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Remove passwords, public endpoints, usernames, and other sensitive information.
+      render: shell
