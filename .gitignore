@@ -1,0 +1,7 @@
+/dist/
+/natreach
+/natreach.exe
+/.idea/
+/.vscode/
+*.log
+.DS_Store
